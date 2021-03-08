@@ -1,0 +1,32 @@
+.orderSucc {
+    padding: 70px 0;
+    background-color: #f9f9f9;
+
+    .successText {
+        text-align: center;
+
+        svg {
+            font-size: 50px;
+            color: #4ead4e;
+            margin: auto;
+        }
+
+        h2 {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-size: 36px;
+            color: #222222;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 0.02em;
+        }
+        p{
+            font-size: 18px;
+            text-transform: capitalize;
+            color: #777777;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+    }
+}

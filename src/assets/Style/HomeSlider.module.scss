@@ -1,0 +1,196 @@
+.SliderHome {
+    overflow: hidden;
+
+    .bgSliderImage {
+        padding: 114px 0 222px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        background-position-x: 100%;
+        height: 450px;
+        // &::after{
+        //     content: "";
+        //     background: #0000;
+        // }
+        @media (max-width:767px) {
+            background-position-x: 77%;
+        }
+    }
+}
+
+.SliderContent {
+    .bannerSubtitle {
+        font-size: 36px;
+        line-height: 46px;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+    }
+
+    .bannerTitle {
+        font-size: 90px;
+        line-height: 100px;
+        margin-top: 0px;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        text-shadow: 0px 10px 0px rgba(49, 64, 71, 0.15);
+
+        @media(max-width: 1199px) {
+            font-size: 70px;
+            line-height: 80px;
+        }
+
+        @media (max-width: 991px) {
+            font-size: 60px;
+            line-height: 70px;
+        }
+
+        @media(max-width: 767) {
+            font-size: 46px;
+            line-height: 56px;
+        }
+    }
+
+    .text {
+        font-size: 22px;
+        line-height: 33px;
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 25px;
+    }
+
+    .CustomBtn {
+        background-image: -webkit-gradient(linear, left bottom, left top, from(#426d49), to(#426d49));
+        background-image: -o-linear-gradient(bottom, #426d49 0%, #426d49 100%);
+        background-image: linear-gradient(0deg, #426d49 0%, #426d49 100%);
+        border-style: solid;
+        border-width: 1px;
+        border-color: #426d49;
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 3px 2px 0px rgba(32, 29, 30, 0.25);
+        box-shadow: 0px 3px 2px 0px rgba(32, 29, 30, 0.25);
+        padding: 5px 15px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #ffffff;
+        display: inline-block;
+        cursor: pointer;
+        width: auto;
+        height: auto;
+        padding: 13px 30px;
+    }
+}
+
+
+.BannerJackpot {
+    display: flex;
+    justify-content: space-around;
+    background-color: #426d49;
+    position: absolute;
+    width: 100%;
+    max-width: 900px;
+    left: 50%;
+    align-items: center;
+    bottom: 0;
+    transform: translate(-50%, 0);
+
+    @media (max-width:767px) {
+        display: block;
+        padding: 10px;
+    }
+
+    .BannerJackpotBox {
+        display: flex;
+        align-items: center;
+        img{
+            @media (max-width:767px) {
+                display: none;
+            }
+        }
+        @media (max-width:767px) {
+            display: block;
+        }
+
+        .bgJackpot {
+
+
+            margin: 0 0 0 11px;
+            font-weight: 600;
+            font-size: 62px;
+            line-height: 38px;
+            color: #fff;
+            text-align: left;
+            @media (max-width:767px) {
+                font-size: 26px;
+                text-align: center;
+            }
+        
+            span {
+                font-size: 24px;
+                line-height: 2.2em;
+                font-weight: normal;
+                border-right-color: #00e0f2;
+
+                em {
+                    color: #fff;
+                    padding: 0 6px 0 0;
+                    margin: 0 6px 0 0;
+                    border-right: 1px solid #fff;
+                }
+            }
+        }
+    }
+
+    .CountdownBanner {
+
+        text-align: center;
+
+        ul {
+            margin: 0 0 5px 0;
+            display: flex;
+            @media (max-width:767px) {
+                justify-content: center;
+            }
+
+            li {
+                padding-left: 0;
+                list-style: none;
+                margin: 0 0 0 12px;
+                text-align: center;
+
+                span {
+                    width: 19px;
+                    font-size: 21px;
+                    font-weight: 300;
+                    margin: 0 0 2px 2px;
+                    line-height: 28px;
+                    background: #fff;
+                    color: #000;
+                    -moz-border-radius: 2px;
+                    -webkit-border-radius: 2px;
+                    border-radius: 2px;
+                    padding: 5px;
+                    font-weight: bold;
+                }
+
+                em {
+                    font-size: 12px;
+                    color: #fff;
+                    font-style: normal;
+                }
+            }
+        }
+
+        .CustomBtn {
+            color: #fff;
+            border: 1px solid #fff;
+            box-shadow: none;
+        }
+    }
+}
